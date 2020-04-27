@@ -1,0 +1,37 @@
+Fragments :
+- Introduced in Android 3.0
+- Lifecycle of Fragment onAttach() onCreate() onCreateView() onActivityCreated() onViewCreated() onStart() onResume() ———————— onPause() onStop() onDestroy() onActivityDestroyed() onDetach() 
+
+
+
+
+Fragment demo
+- Fragment class class extending Fragment newInstance static method onCreateView()     Create and object view     Inflate it with fragment layout file     Optionally initialise the view reference for interaction     return the view 
+- Activity Create a container (Framelayout) in the activity layout to hold the fragment Create object of fragment FragmentManager using getSupportFragmentManager() from AppCompatActivity Create transaction using manager transaction.replace() transaction commit()
+
+
+
+
+FragmentViewPager
+- Add ViewPager to the Activity layout
+- Create reference to the Viewpager in activity onCreate()
+- Create Adapter (class extending FragmentPagerAdapter)
+- Adapter has three methods 1. Constructor() - Keep as it is 2. getCount() - return the number of items in slider 3. getItem() - return the fragment
+- Create the fragment class Optionally accept index / data related to the index it represents.
+- Create object of the Fragment in getItem. Pass index / position related data to newInstance() of fragment
+- Return the fragment.
+
+
+
+
+
+DialogBuilder 
+- Uses the builder pattern to create object of AlertDialog
+- Builder pattern is having a static Builder class inside a specific class to instantiate itself.
+
+NOTE for dialogs : 
+- Always create alert dialog references as class fields.
+- In onPause() check if the dialog is currently showing. Dismiss the dialog if it is visible.
+- If the dialog is left open while activity goes in background (onPause state), the application may throw  windowLeakException
+
+

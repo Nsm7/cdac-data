@@ -1,0 +1,266 @@
+* mobile
+- easy to move around (portable)
+
+* desktop CPU
+- central processing unit 
+- to process the instructions
+- CISC: complex instruction set computing
+- manufactures
+  - AMD: Advanced Micro Devices
+  - Intel: Integrated Electronics
+
+* desktop GPU
+- graphics processing unit
+- to process the graphics instructions
+- manufactures
+  - NVidia 
+  - AMD
+
+* monitor types
+- cat: cathod ray tube
+- tft: thin film transistor
+- lcd: liquid crystal display
+- led: light emitting diode
+  - oled: organic led
+  - amoled: active matrix oled
+  - ips: in plain switching
+
+* desktop motherboard back panel
+- storage
+  - usb: universal serial bus
+  - firewire: 400/800
+  - sata: serial advanced technologies attached 
+  - eSata: serial advanced technologies attached 
+  - M.2
+  - pata: parallel advanced technologies attached 
+    - also known IDE
+    - IDE: Integrate Device Electronics 
+- graphics
+  - vga: visual graphics adapter
+  - hdmi: high definition multimedia interface
+    - version
+      - 1.0: full HD with 60fps
+      - 1.1: full HD with 60fps
+      - 2.0: Ultra HD  
+    - hd
+      - half hd (720p): 1280x720
+      - full hd (1080p): 1920x1080	: 2K
+      - ultra hd (2160p): 3840x2160	: 4K
+  - dvi: digital video interface
+- expansion slots
+  - PCI: peripheral component interconnect
+  - PCIe: peripheral component interconnect express
+  - AGP: accelerated graphics port
+
+* mobile device
+- Martin Copper from motorola Inc
+- is an embedded device
+- types
+  - phone
+    - phablet
+    - tablet
+    - basic phone
+      - also known as feature phone
+      - used for making and receiving the call
+      - used for sending and receiving 160 characters SMS
+      - used for playing games like snakes
+      - e.g. nokia 3310, 2100, 2600
+    - smart phone
+      - phone which has its own OS
+      - e.g.
+        - Android
+        - iOS
+        - Windows Phone
+        - BlackBerry OS
+        - Amazon FireOS
+        - MeeMo
+        - MeeGo
+        - Tizen
+        - Bada
+        - PalmOS
+        - WebOS
+  - smart watch
+    - apple: watchOS
+    - asus Zen Watch: Android Wear
+    - Samsung Gear: Tizen
+  - smart TV
+    - Sony, Samsung: Android TV
+    - LG: WebOS
+  - make old TV smart
+    - Apple TV: tvOS
+    - Amazon Fire TV stick:
+    - Roku
+    - Airtel eXtreme
+  - smart speaker
+    - HomePod: Apple -> Siri
+    - Smart speaker: Google -> Google assistant 
+    - Amazon Echo: Amazon -> Alexa
+  - smart car: Android Auto
+  - smart glass: Google 
+  - notebook/laptop
+- components
+  - mother board (PCB)
+    - mobile form factor (size, shape)
+    - irregular in shape
+    - there will NOT be single expansion port 
+  - cpu
+    - asic: application specific integrated circuit
+      - contains both CPU as well as GPU
+    - risc: reduced instruction set computing
+    - having a specification: ARM (advanced RISC machine)
+    - also known as SoC (System on Chip)
+    - also known as PoP (Package on Package)
+    - manufactures
+      - apple (Ax)
+        - ARM + PowerVR
+        - ARM + apple GPU
+      - Samsung (Exynos)
+        - ARM + PowerVR
+        - ARM + Adreno
+        - ARM + Mali
+      - Qualcomm (Snapdragon)
+        - ARM + Adreno
+        - ARM + Mali
+      - Huawei (Kirin)
+        - ARM + Mali
+  - primary memory
+    - type
+      - eDRAM: embedded DRAM
+      - LPDDR: Low Power Dynamic Double Rate
+    - can not be upgraded 
+  - secondary storage
+    - internal storage: flash
+    - external storage: SD card [Secure Digital]
+    - file system
+      - android
+        - YAFFSvs -> Yet Another Flash FS <= 2.3
+        - ext4    -> > 2.3
+      - iPhone
+        - HFSx: Hierarchical File System eXtended
+      - Windows Phone
+        - TexFAT: transactional extended File Allocation Table
+  - input devices
+    - screen
+      - multi-touch screen
+      - oleophobic: hates the oil (coming from finger)
+      - protected by Cornings Gorilla Glass
+    - audio
+      - microphone: 2 (noise cancellation)  
+    - video
+      - camera
+        - rear: 2K-4K
+        - front: vga-2K
+  - sensors
+    - tri-axial accelerometer
+    - gyroscope
+    - ambient light sensor 
+    - proximity sensor
+    - baro meter (pressure)
+    - temperature sensor
+
+* android
+- is an operating system for mobile devices
+- is open source and free
+- uses linux kernel [2.6.29 +]
+
+
+* history
+- Andy Rubin was working with Danger Inc in 2001
+- started Android Inc by Andy Rubin in 2003
+- in 2005, Andy met Larry Page
+- in 2005, google bought the Android Inc
+- in 2006, google started Open Handset Alliance (OHA)
+  - mobile manufacturers (Sony, Samsung, Motorola, HTC etc.)
+  - service providers (orange, t-mobile etc.)
+- in 2008, goole launched the first android phone [HTC google nexus one]
+
+
+* android versions
+- Astro  -> Alpha
+- Bender -> Beta
+-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->
+- 1.5 Cupcake 
+- 2.0 Donut
+- 2.1 Eclair
+- 2.2 Froyo
+- 2.3 Ginger bread 		- only for cell phone
+-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->
+- 2.3.6 Ginger bread 		- only for cell phone and tablet
+-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->
+- 3.0 Honeycomb			- only for tablet
+- 3.1 Honeycomb			- only for tablet
+-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->
+- 4.1 Ice Cream Sandwich	- available for both phone and tablet
+- 4.3 Jelly Bean
+- 4.4 Kitkat
+- 5 Lollipop
+- 6 MarshMellow
+- 7 Naugat  
+- 8 Oreo
+- 9 Pie
+
+
+* android SDK
+- collection of headers/packages/namespaces 	: +40 packages
+- collection of libraries			: -
+- documentation 				: developer.android.com
+- toolchain
+  - compiler/interpreter			: javac, dx
+  - linker					: -
+  - assembler					: -
+  - disassembler 				: java -p
+  - debugger 					: jdb
+  - extra utilities				: monkey runner, adb etc.
+    - gradle					: used to build the app
+--------------------------------------------------------------------------
+- IDE						: android studio
+- vm						: JVM
+  emulator					: qemu, BlueStack 
+  simulator					: iOS simulator 
+
+
+* JVM vs DVM
+- JVM is built for desktop
+  DVM is built for Android (mobile)
+- JVM is stack-based
+  DMV is register-based 
+- JVM requires 100% byte codes
+  DVM requires 70% bytes codes and 30% of assembly code
+
+
+* android components
+- activity
+- service 
+- content provider
+- broadcast receiver
+
+* Bundle
+- collection of key-value pairs
+- similar to HashTable
+
+* Intent
+- intention to perform an action
+- contains
+  - src: source component
+  - cmp: destination component 
+  - bundle
+    - collection of key-value pairs need to pass to destination component
+    - to add a pair use: putExtra()
+    - to get a value from a key use: get<data type>Extra()
+  - action
+  - category
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

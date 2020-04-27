@@ -1,0 +1,39 @@
+SDK tools
+- Android SDK build tools
+- Android emulator
+- Android SDK platform tools
+- Android SDK tools
+- Google play services
+
+
+Android manifest
+- Describes the screens in app to device.
+- Features available in app.
+- Android features accessed by app.
+
+
+
+
+Building blocks of Android
+- Activity
+- Intent
+- Services
+- Broadcast receiver
+- Content provider
+
+
+
+
+Activity
+- OnCreate() - setContentView()
+
+
+
+Linear layout 
+- Place children according to orientation
+- No overlapping
+
+
+
+When using weights in linear layout, set respective size attribute to 0.
+e.g. For Linear layout with orientation horizontal, set width of children with weight to zero.

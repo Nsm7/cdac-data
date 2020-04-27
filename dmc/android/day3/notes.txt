@@ -1,0 +1,8 @@
+
+SharedPreferences -
+- This is a key value pair store
+- This created an XML file in the private directory of app
+- This is used to retain data inbetween different sessions of the application.
+
+
+

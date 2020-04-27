@@ -1,0 +1,20 @@
+List view :
+
+- RecyclerView
+- Install it using dependancy
+- Add RecyclerView view in activity layout
+- Create a class for Adapter extending RecyclerView.Adapter
+- Override methods
+- Return the size of list from ”getItemCount()”
+- Create layout for single row item
+- Create a class extending ViewHolder to hold individual views from a single row.
+- Initialize all the views from row layout as class fields in View holder
+- Declare the View holder as template for Adapter.
+- Create Layout inflater in CreateViewHolder
+- Create View for single row in CreateViewHolder
+- Return ViewHolder object from CreateViewHolder
+- Set value for given position to the ViewHolder item views in OnBindViewHolder.
+- Create object of adapter.
+- Create LinearLayoutManager.
+- Set orientation to Layout manager.
+- Set the layout manager to RecyclerView.

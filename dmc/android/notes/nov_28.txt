@@ -1,0 +1,66 @@
+* fragment
+- reusable and logical area within an activity
+- the fragment view must be created in onCreateView()
+- to add the fragment in an activity
+  - static
+    - once added the fragment can not be removed dynamically
+    - add the fragment class into the xml file of activity 
+    - e.g.
+
+      <fragment
+          class=""/>
+
+      <fragment
+          android:name=""/>
+
+  - dynamic
+    - can be added or removed or replaced dynamically (at run time)
+
+
+        CarListFragment fragment = new CarListFragment();
+
+        FragmentManager manager = getSupportFragmentManager();
+        FragmentTransaction transaction = manager.beginTransaction();
+        transaction.replace(R.id.layoutContent, fragment);
+        transaction.commit();
+
+
+
+* current location
+- providers
+  - GPS: ACCESS_FINE_LOCATION
+  - A-GPS: ACCESS_COARSE_LOCATION
+    - assisted GPS
+    - cell triangulation system
+  - network: INTERNET
+- location
+  - latitude
+  - longitude
+
+* components
+
+- activity
+  - used to create the application's UI
+  - the activity runs in foreground
+  - can not run in background
+- service
+  - used to execute the code in background
+  - used to share the code with other applications 
+  - types
+    - system
+      - which starts when android boots
+      - also known as started/unbound services
+      - e.g.
+        - LocationService: used to get current location (Lat/Long)
+        - NotificationService: used to manage the notifications
+        - MusicService:
+        - DownloadService: used to download a file from internet
+    - user
+      - which are started by user
+      - types
+        - started/unbound service
+        - bound service
+- content provider
+  - used to share the data with other application
+- broadcast receiver 
+  - used to receive the broadcasted message

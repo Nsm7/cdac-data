@@ -1,0 +1,45 @@
+* data persistence
+- shared preferences
+- sqlite
+- file
+- content provider
+
+
+* adb
+- android debugging bridge 
+- commands
+
+  - devices
+    - displays the connected devices 
+  - kill-server
+    - kills the adb daemon
+  - start-server
+    - starts the adb daemon
+  - shell
+    - returns the device's shell
+  - pull
+    - copy the file from device to desktop
+    - ./adb pull <device file path> <desktop path>
+  - push
+    - copy the file from desktop to device
+    - ./adb push <desktop path> <device file path>
+  - install
+    - to install an apk file
+    - ./adb install <path>
+  - uninstall 
+    - to uninstall an application from device
+    - ./adb uninstall <application package name>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,118 @@
+* Sqlite database
+- lite version of sql
+- mainly developed for mobile
+- by default it is available for iOS and android 
+- no separate installation is required
+- many applications like contacts, camera, messages are using sqlite internally to store their data
+- file based database
+- one sqlite file represents a database 
+
+- does not support all the sql functionality
+  - database
+  - stored procedure
+  - trigger
+  - relationship
+- what does it support
+  - table
+  - function
+
+* Sqlite in Android
+
+- insert
+
+        // get object of DBHelper
+        DBHelper helper = new DBHelper(this);
+
+        // get the db reference
+        SQLiteDatabase db = helper.getWritableDatabase();
+        
+        // create content values
+        ContentValues values = new ContentValues();
+        
+        // add column name-value pairs
+        values.put("name", editName.getText().toString());
+        
+        // insert country name
+        db.insert("country", null, values);
+
+        // close the connection
+        db.close(); 
+
+- query
+
+
+        DBHelper helper = new DBHelper(this);
+        SQLiteDatabase db = helper.getReadableDatabase();
+
+        // list of columns
+        String columns[] = new String[] {"id", "name"};
+
+        // cursor is a in-memory table
+        Cursor cursor = db.query("country", columns, null, null, null, null, null);
+
+        // check if the table is empty
+        if (!cursor.isAfterLast()) {
+
+            // reset the cursor to point the first record
+            cursor.moveToFirst();
+
+            // get the records
+
+            while (!cursor.isAfterLast()) {
+
+                // get id
+                int id = cursor.getInt(0);
+
+                // get name
+                String name = cursor.getString(1);
+
+                Log.e("MainActivity", "Id: " + id);
+                Log.e("MainActivity", "Name: " + name);
+
+                // go to the next record
+                cursor.moveToNext();
+
+            }
+
+        }
+
+        // close the cursor
+        cursor.close();
+
+        db.close();
+
+
+- update
+
+        DBHelper helper = new DBHelper(this);
+        SQLiteDatabase db = helper.getWritableDatabase();
+
+        // update country set name = '' where id = <>
+
+        ContentValues values = new ContentValues();
+        values.put("name", "sri lanka");
+
+        db.update("country", values, "id=?", new String[] {"" + country.getId()});
+
+        db.close();
+
+
+- delete
+
+        DBHelper helper = new DBHelper(this);
+        SQLiteDatabase db = helper.getWritableDatabase();
+
+        // delete from country where id = <>
+
+        db.delete("country", "id=?", new String[]{ "" + country.getId() });
+
+        db.close();
+
+
+
+
+
+
+
+
+

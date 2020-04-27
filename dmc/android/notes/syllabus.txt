@@ -1,0 +1,102 @@
+* basics
+d- mobile
+d- architecture
+d- history
+
+* activity
+d- basics
+- lifecycle
+- material design
+  - App Compat Activity
+
+* dialogs
+d- toast
+- custom dialog
+- alert
+- fragment dialog 
+
+* layouts
+d- linear
+- constraints
+- relative
+- fragment
+
+* intents
+- implicit
+  - open google map
+  - open phone application
+  - dial a phone
+  - send sms
+  - send email
+  - start activity
+  - start service
+d- explicit 
+  d- start activity
+  - start service
+  d- share the data
+
+* persistence 
+- shared preferences
+- SqlLite database
+- Content Provider
+
+* adapter views
+d- list view
+- recycler view
+- pager view
+- Spinner
+- AutoCompleteTextView
+
+* fragment 
+- basics
+- lifecycle
+- instantiate
+  - static
+  - dynamic
+- google map fragment 
+
+
+* services
+- basics
+- types
+  - bound
+  - unbound
+- lifecycle
+- communication 
+  - binder
+  - using messages
+
+* user location
+
+* searching 
+
+* notification
+
+* consuming the web services
+
+* media
+- audio player
+- video player
+
+* push 
+- FCM - GCM
+
+* broadcast receiver
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

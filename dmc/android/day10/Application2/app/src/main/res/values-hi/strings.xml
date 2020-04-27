@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">आवेदन 2</string>
+    <string name="name">नाम</string>
+    <string name="address">पता</string>
+    <string name="phone">फ़ोन</string>
+    <string name="save">बचाना</string>
+    <string name="cancel">रद्द करना</string>
+    <string name="register_new_user">नया उपयोगकर्ता पंजीकृत करें</string>
+    <string name="welcome">स्वागत हे</string>
+</resources>

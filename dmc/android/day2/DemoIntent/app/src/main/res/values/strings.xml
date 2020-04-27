@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">DemoIntent</string>
+    <string name="go_to_next_screen">Go to next screen</string>
+    <string name="next_activity">Next activity</string>
+</resources>

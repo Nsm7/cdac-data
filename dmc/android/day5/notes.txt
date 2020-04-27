@@ -1,0 +1,30 @@
+Context : 
+It is a referrence point for the code to execute.
+
+
+LayoutInflater : 
+It is used to create Java reference of View class from layout xml file.
+
+
+Broadcast Receiver : 
+- Register receiver in onResume
+- Unregister receiver in onPause before super.onPause()
+- Maintain the reference to the receiver as class field.
+- 
+
+
+
+Services :
+- Services are subprograms running on a seperate thread in the application process
+- Two types of services : 1. Bound service     These are bound to activity lifecycle. Meaning, services are destroyed as soon as the activity is destroyed.  2. Unbound service These services stay alive in the background irrespective of the state of the activity which initiated them. 
+
+- To execute code in service, write the code in onStartCommand()
+- Return integer from onStartCommand() to notify system whether to restart the service if it gets destroyed for the memory requirements. Return Service.START_STICKY to tell the system to restart the service when destroyed. Return Service.START_NOT_STICKY to tell the system to not restart the service when destroyed even if it is possible.
+
+
+
+UI thread :  which updates and works with UI. 
+
+
+
+

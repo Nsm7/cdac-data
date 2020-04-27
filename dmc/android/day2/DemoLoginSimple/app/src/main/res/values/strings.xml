@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">DemoLoginSimple</string>
+    <string name="email">EMail</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="login_successful">Login successful</string>
+    <string name="login_failed">Login Failed</string>
+</resources>
